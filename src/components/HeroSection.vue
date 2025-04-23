@@ -59,7 +59,7 @@ const news = ref([
 
 .gradient-text {
   background: linear-gradient(90deg, #5D0E2B, #c16700);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
