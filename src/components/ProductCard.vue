@@ -30,19 +30,16 @@
 
 <script setup>
 import { defineProps } from "vue";
+import { useStore } from "vuex";
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
+
 const props = defineProps({
   product: Object,
 });
 
-//call store of vuex
-import { useStore } from "vuex";
 const store = useStore();
 
-//callToastify
-import { toast } from "vue3-toastify";
-import "vue3-toastify/dist/index.css";
-
-//toastify function
 const notify = (message) => {
   toast(message, {
     autoClose: 3000,
@@ -51,12 +48,11 @@ const notify = (message) => {
   });
 };
 
-//add to cart function
 const addToCart = () => {
   const Q = 1;
   const product = props.product.value;
   store.dispatch("addToCart", { product, Q });
-  notify("product is added to your cart");
+  notify("Produto adicionado ao carrinho com sucesso!");
   console.log(store.getters["getCart"]);
 };
 </script>

@@ -5,22 +5,24 @@
         ↥
     </button>
 </template>
+
 <script setup>
-import {ref,onMounted,onUnmounted} from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
+
 const isVisible = ref(false);
-const handleScroll = () =>{
+const handleScroll = () => {
     isVisible.value = window.scrollY > 300;
 }
 
-const scrollToTop = () =>{
-    window.scrollTo({top:0,behavior:'smooth'})
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-onMounted(()=>{
-    window.addEventListener('scroll',handleScroll)
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll);
 })
 
-onUnmounted(() =>{
-    window.removeEventListener('scroll',handleScroll);
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll);
 })
 </script>

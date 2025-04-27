@@ -1,5 +1,5 @@
 <template>
-    <section id=""class="bg-primary w-full">
+    <section class="bg-primary w-full">
       
     </section>
   </template>
