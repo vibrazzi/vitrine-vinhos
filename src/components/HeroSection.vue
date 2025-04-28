@@ -32,15 +32,15 @@
     </div>
 
     <!-- Marquee Secundário -->
-    <div class="outer-running-about mt-10 bg-secondary2">
-      <div class="running-text max-w-full">
-        <Vue3Marquee>
-          <p class="text-lg text-white font-bold">
-            Celebre cada momento com Tantehue – Um brinde à tradição!
-          </p>
-        </Vue3Marquee>
-      </div>
-    </div>
+    <div class="outer-running-about mt-10 bg-black rounded-md shadow-sm">
+  <div class="running-text max-w-full text-center">
+    <Vue3Marquee speed="40" pauseOnHover>
+      <p class="text-base text-gray-200 font-medium">
+        🍷<span class="text-white">Tantehue</span> – Um brinde à tradição!
+      </p>
+    </Vue3Marquee>
+  </div>
+</div>
   </section>
 </template>
 
