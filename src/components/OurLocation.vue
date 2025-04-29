@@ -16,7 +16,7 @@
           width="1200" 
           height="500" 
           class="rounded-lg shadow-lg"
-          src="https://www.airnavradar.com/?widget=1&z=8&lat=-18.8831&lng=-48.2177&airportCardRight=true&showLabels=true&showAirlineLogo=true&showFn=true&showRoute=true&showRegistration=true&showAircraftModel=true&class=A,B,G,C,M,H,&showSquawk=7600,7700">
+          src="https://www.airnavradar.com/airport/UDI/?widget=1&z=8&lat=-18.8831&lng=-48.2177&airportCardRight=true&showLabels=true&showAirlineLogo=true&showFn=true&showRoute=true&showRegistration=true&showAircraftModel=true&class=A,B,G,C,M,H,&showSquawk=7600,7700">
         </iframe>
       </div>
     </div>

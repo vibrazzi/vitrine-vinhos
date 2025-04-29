@@ -1,7 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
-    { path: '/', redirect: '/home' },
+    { path: '/', redirect: '/home', },
+    {
+        path: '/home#colecction',
+        name: 'ContactSection',
+        component: () => import('@/components/Collection.vue')
+    },
     {
         path: '/home',
         name: 'HomePage',

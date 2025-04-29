@@ -21,14 +21,15 @@
           <!-- Product Details -->
           <div class="md:flex-1 px-4" data-aos="fade-left">
             <h2 v-if="Product" class="text-2xl font-bold mb-2">{{ Product.title }}</h2>
-            <p class="text-sm mb-4">
-              Desfrute deste vinho único, elaborado com tradição e qualidade!
-            </p>
             <div>
               <span class="font-bold text-gray-700">Descrição do produto</span>
-              <p class="text-gray-600 text-sm mt-2">
-                Descubra o sabor e elegância deste vinho, ideal para todas as ocasiões especiais.
+              <p v-if="Product.description" class="text-gray-600 text-sm mt-2">
+                {{ Product.description }}
               </p>
+            </div>
+            <div class="mt-4">
+              <span class="font-bold text-gray-700">Preço</span>
+              <p class="text-red-600 font-bold text-lg">{{ Product.price }}</p>
             </div>
           </div>
           <!-- End Product Details -->
@@ -43,7 +44,6 @@
 import { defineAsyncComponent, onBeforeMount, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
-import "vue3-toastify/dist/index.css";
 
 const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"));

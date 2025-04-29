@@ -9,7 +9,7 @@
             Descubra o prazer em cada taça <span class="gradient-text">Tantehue!</span>
             <img src="/gif.gif" alt="shining" class="w-[32%] inline-block -ml-10 align-middle" />
           </h1>
-          <p class="mt-6 text-lg text-gray-700">
+          <p class="mt-8 text-lg text-gray-700">
             Aproveite o sabor, a tradição e a elegância em cada garrafa.
           </p>
         </div>
@@ -68,7 +68,7 @@ const breakpoints = ref({
 <style>
 /* Estilos para HeroSection */
 .gradient-text {
-  background: linear-gradient(90deg, #5D0E2B, #c16700);
+  background: linear-gradient(90deg, #921342, #ff8800);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
