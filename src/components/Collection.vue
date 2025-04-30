@@ -7,15 +7,15 @@
       Coleção
     </h1>
     <div
-      class="py-8 xl:px-16 px-4 sm:py-16 grid grid-cols-1 gap-10 pt-10 sm:grid-cols-2 md:gap-14 md:pt-12 lg:grid-cols-2 text-center"
+      class="py-8 xl:px-16 px-4 sm:py-16 grid grid-cols-1 gap-10 pt-10 sm:grid-cols-2 md:gap-14 md:pt-12 lg:grid-cols-2"
     >
       <div
         v-for="element in collection"
         :key="element.id"
-        class="w-full mx-auto flex flex-col items-center"
+        class="w-full mx-auto flex items-center gap-4"
       >
         <!-- Imagem do Produto -->
-        <div class="mb-4 max-h-[150px] flex justify-center">
+        <div class="max-h-[150px] flex-shrink-0">
           <img
             :src="element.img"
             alt="collection"
@@ -23,7 +23,7 @@
           />
         </div>
         <!-- Descrição do Produto -->
-        <div class="w-full text-center">
+        <div class="text-left">
           <p class="font-bold uppercase text-black text-lg">{{ element.name }}</p>
           <p class="text-sm text-gray-600 mt-2">{{ element.description }}</p>
         </div>
