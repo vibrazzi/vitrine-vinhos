@@ -28,7 +28,6 @@
               </p>
             </div>
             <div class="mt-4">
-              <span class="font-bold text-gray-700">Preço</span>
               <p class="text-red-600 font-bold text-lg">{{ Product.price }}</p>
             </div>
           </div>
