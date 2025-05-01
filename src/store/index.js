@@ -22,7 +22,7 @@ export default createStore({
         img: "/VinhoBlanc.png",
         title: "Sauvignon Blanc",
         category: "necklace",
-        description: "Visão: Amarelo Palha Claro. Olfato: Dono de um aroma rico em frutas com notas de morangos frescos, lichia, abacaxi e kiwi. Paladar: Na boca é fresco, intenso e suculento, que lembram também as frutas tropicais. Harmonização: Ideal para acompanhar pratos a base de frutos do mar, peixes e saladas. Leve e refrescante, com notas cítricas e florais. Perfeito para acompanhar frutos do mar e saladas."
+        description: "Visão: Amarelo palha claro. Olfato: Dono de um aroma rico em frutas, com notas de morangos frescos, lichia, abacaxi e kiwi. Paladar: Na boca, é fresco, intenso e suculento, lembrando também as frutas tropicais. Harmonização: Ideal para acompanhar pratos à base de frutos do mar, peixes e saladas. Leve e refrescante, com notas cítricas e florais. Perfeito para acompanhar frutos do mar e saladas."
       },
       {
         id: 4,
@@ -34,9 +34,9 @@ export default createStore({
       {
         id: 5,
         img: "/VinhoRose.png",
-        title: "Rose",
+        title: "Rosé",
         category: "ring",
-        description: "Um vinho Rosé delicado, frutado e paldar refrescante. Ligeiro mas com bom volume de boca ele harmoniza muito bem com pescados, mariscos, quiejos frescos e saladas."
+        description: "Um vinho rosé delicado, frutado e de paladar refrescante. Ligeiro, mas com bom volume de boca, harmoniza muito bem com pescados, mariscos, queijos frescos e saladas."
       },
     ],
     productID: null,
@@ -53,7 +53,7 @@ export default createStore({
         const product = state.products.find((product) => product.id === id);
         commit("GET_PRODUCT_BY_ID", product);
       } catch (error) {
-        console.error("error in get product by id action :", error);
+        console.error("Erro na ação de obter produto por ID:", error);
       }
     },
     addToCart({ commit }, item) {

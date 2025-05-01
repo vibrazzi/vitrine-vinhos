@@ -12,20 +12,21 @@
       <div
         v-for="element in collection"
         :key="element.id"
-        class="w-full mx-auto flex items-center gap-4"
+        class="w-full mx-auto flex items-center gap-4 flex-wrap"
       >
         <!-- Imagem do Produto -->
-        <div class="max-h-[150px] flex-shrink-0">
+        <div class="max-h-[180px] flex-shrink-0 w-[120px] h-[180px]">
           <img
             :src="element.img"
             alt="collection"
-            class="scale-100 group-hover:scale-105 transition-all duration-500 h-[150px] w-[150px] max-w-full object-cover rounded-lg"
+            class="scale-100 group-hover:scale-105 transition-all duration-500 w-full h-full object-cover rounded-lg"
           />
         </div>
         <!-- Descrição do Produto -->
-        <div class="text-left">
+        <div class="text-left flex-1">
           <p class="font-bold uppercase text-black text-lg">{{ element.name }}</p>
-          <p class="text-sm text-gray-600 mt-2">{{ element.description }}</p>
+          <p v-if="element.subtitle" class="text-sm text-gray-500 italic">{{ element.subtitle }}</p>
+          <p v-html="element.description" class="text-sm text-gray-600 mt-2"></p>
         </div>
       </div>
     </div>
@@ -39,26 +40,30 @@ const collection = ref([
   {
     id: 2,
     name: "Cabernet Sauvignon",
-    img: "/cabernet.jpeg",
-    description: "Um vinho robusto com notas de frutas vermelhas e especiarias. Ideal para harmonizar com carnes e queijos.",
+    subtitle:"vinho fino, tinto e seco",
+    img: "/CabernetVinho.png",
+    description: "Os aromas destacam frutas vermelhas e negras, como framboesa, ameixa e amora. <strong>Acompanha queijos maduros, carnes grelhadas e pratos picantes</strong>🍷✨",
   },
   {
     id: 3,
     name: "Merlot",
-    img: "/merlot.jpeg",
-    description: "Frutado e suave, com um toque de ameixa e cereja. Perfeito para massas e pratos italianos.",
+    subtitle:"vinho fino, tinto e seco",
+    img: "/MerlotVinho.png",
+    description: "Atrativo e elegante, possui intensidade aromática e frutada como framboesas, morangos, mirtilos e cassis. <strong>harmoniza com queijos maduros, carnes brancas e grelhados</strong>🍷✨",
   },
   {
     id: 4,
     name: "Carmenere",
-    img: "/carmenere.png",
-    description: "Elegante e encorpado, com aromas de frutas negras maduras e leve toque de pimenta.",
+    subtitle: "vinho fino, tinto e seco",
+    img: "/CarmenereVinho.png",
+    description: "Frutas vermelha fresca como morango, cereja e groselha, combinando com notas picantes e toque de baunilha e chocolate. <strong>Ideal para pratos como ensopados e comida com especiarias</strong>🍷✨",
   },
   {
     id: 1,
     name: "Sauvignon Blanc",
-    img: "/blanc.jpeg",
-    description: "Leve e refrescante, com notas cítricas e florais. Ótimo para acompanhar frutos do mar.",
+    subtitle: "vinho fino, branco e seco",
+    img: "/BlancVinho.png",
+    description: "Este vinho se caracteriza com uma cor amarelo claro e um aroma intenso de frutas tropicais e cítricas. <strong>O que faz ele combinar com mariscos, pratos com molhos suaves e carnes brancas</strong>🍷✨",
   },
 ]);
 </script>
