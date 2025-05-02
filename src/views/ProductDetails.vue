@@ -38,7 +38,7 @@
 import { defineAsyncComponent, onBeforeMount, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
-
+console.log("teste")
 const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"));
 
