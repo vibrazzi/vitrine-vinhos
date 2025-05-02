@@ -3,7 +3,7 @@
         <Suspense>
             <template #default>
                 <div class="font-playfair">
-                    <NavBar />
+                    <NavBar isHome="true"/>
                     <HeroSection />
                     <Collection />
                     <ExclusiveSection />

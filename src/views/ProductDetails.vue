@@ -7,13 +7,8 @@
           <!-- Product Image -->
           <div class="md:flex-1 px-4">
             <div class="h-[460px] rounded-lg bg-gray-300 mb-4">
-              <img
-                v-if="Product"
-                :src="Product.img"
-                alt="product image"
-                class="w-full h-full object-cover"
-                data-aos="fade-right"
-              />
+              <img v-if="Product" :src="Product.img" alt="product image" class="w-full h-full object-cover"
+                data-aos="fade-right" />
             </div>
           </div>
           <!-- End Product Image -->
