@@ -10,7 +10,7 @@
               <img
                 v-if="Product"
                 :src="Product.img"
-                alt="product image"
+                :alt="`Imagem do produto ${Product.title}`"
                 class="w-full h-full object-cover"
                 data-aos="fade-right"
               />
@@ -27,8 +27,8 @@
                 {{ Product.description }}
               </p>
             </div>
-            <div class="mt-4">
-              <p class="text-red-600 font-bold text-lg">{{ Product.price }}</p>
+            <div v-if="Product.price" class="mt-4">
+              <p class="text-red-600 font-bold text-lg">R$ {{ Product.price.toFixed(2) }}</p>
             </div>
           </div>
           <!-- End Product Details -->
@@ -44,9 +44,11 @@ import { defineAsyncComponent, onBeforeMount, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
 
+// Componentes assíncronos
 const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"));
 
+// Configuração do Vuex e rota
 const route = useRoute();
 const store = useStore();
 const id = ref(null);
@@ -56,8 +58,10 @@ onBeforeMount(async () => {
   id.value = route.params.id;
   const numericId = Number(id.value);
   if (!isNaN(numericId)) {
-    await store.dispatch("getProductIdAc", numericId);
-    Product.value = store.getters["getProductId"];
+    await store.dispatch("fetchProductById", numericId);
+    Product.value = store.getters["getProductById"](numericId);
+  } else {
+    console.error("ID inválido fornecido na rota.");
   }
 });
 </script>

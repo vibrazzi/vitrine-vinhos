@@ -7,18 +7,60 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
 *.local
 
+# Environment files
+.env
+.env.*.local
+
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MacOS files
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Build artifacts
+*.out
+*.exe
+*.dll
+*.obj
+*.o
+*.pyc
+*.pyo
+*.class
+*.jar
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

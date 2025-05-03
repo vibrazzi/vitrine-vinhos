@@ -3,7 +3,7 @@
         <Suspense>
             <template #default>
                 <div class="font-playfair">
-                    <NavBar />
+                    <NavBar isHome="true"/>
                     <HeroSection />
                     <Collection />
                     <ExclusiveSection />
@@ -24,18 +24,18 @@
     </div>
 </template>
 <script setup>
-import { defineAsyncComponent } from 'vue';
-import LoadingSpinner from '@/components/LoadingSpinner.vue';
+import { defineAsyncComponent } from "vue";
+import LoadingSpinner from "@/components/LoadingSpinner.vue";
 
-//components lazy loading
-const NavBar = defineAsyncComponent(()=> import('@/components/NavBar.vue')) 
-const HeroSection = defineAsyncComponent(()=> import('@/components/HeroSection.vue'))
-const Collection = defineAsyncComponent(()=> import('@/components/Collection.vue'));
-const ExclusiveSection = defineAsyncComponent(()=> import('@/components/ExclusiveSection.vue'));
-const BestSellers = defineAsyncComponent(()=> import('@/components/BestSellers.vue'));
-const OurLocation = defineAsyncComponent(()=> import('@/components/OurLocation.vue'));
-const BestGifts = defineAsyncComponent(()=> import('@/components/BestGifts.vue'));
-const ContactSection = defineAsyncComponent(()=> import('@/components/ContactSection.vue'));
-const Footer = defineAsyncComponent(()=> import('@/components/Footer.vue'));
-const BackToTop = defineAsyncComponent(()=> import('@/components/BackToTop.vue'));
+// Lazy loading dos componentes
+const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
+const HeroSection = defineAsyncComponent(() => import("@/components/HeroSection.vue"));
+const Collection = defineAsyncComponent(() => import("@/components/Collection.vue"));
+const ExclusiveSection = defineAsyncComponent(() => import("@/components/ExclusiveSection.vue"));
+const BestSellers = defineAsyncComponent(() => import("@/components/BestSellers.vue"));
+const OurLocation = defineAsyncComponent(() => import("@/components/OurLocation.vue"));
+const BestGifts = defineAsyncComponent(() => import("@/components/BestGifts.vue"));
+const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"));
+const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
+const BackToTop = defineAsyncComponent(() => import("@/components/BackToTop.vue"));
 </script>
