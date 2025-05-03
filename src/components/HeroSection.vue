@@ -7,7 +7,7 @@
         <div class="md:mt-5 relative animate-fade-in">
           <h1 class="text-balance text-3xl font-medium tracking-tight text-black sm:text-6xl md:text-[3rem] font-montserrat">
             Descubra o prazer em cada taça <span class="gradient-text animate-glow">Tantehue!</span>
-            <img src="/gif.gif" alt="shining" class="w-[32%] inline-block -ml-10 align-middle animate-pulse" />
+            <img src="/gif.gif" alt="Efeito brilhante" class="w-[32%] inline-block -ml-10 align-middle animate-pulse" />
           </h1>
           <p class="mt-8 text-lg text-gray-700">
             Aproveite o sabor, a tradição e a elegância em cada garrafa.
@@ -16,10 +16,10 @@
 
         <!-- Carrossel de Vinhos -->
         <div class="lg:h-full w-[90%] md:w-full mt-20 md:mt-0 animate-slide-in">
-          <Carousel :wrap-around="true" :breakpoints="breakpoints">
+          <Carousel :wrap-around="true" :breakpoints="breakpoints" aria-label="Carrossel de vinhos exclusivos">
             <Slide v-for="(image, index) in images" :key="index">
               <div class="carousel-item">
-                <img :src="image" alt="wine image" class="carousel-image" />
+                <img :src="image" :alt="`Imagem do vinho ${index + 1}`" class="carousel-image" />
               </div>
             </Slide>
             <template #addons>
@@ -64,7 +64,7 @@ const breakpoints = ref({
 });
 </script>
 
-<style>
+<style scoped>
 /* Estilos para HeroSection */
 .gradient-text {
   background: linear-gradient(90deg, #921342, #ff8800);
@@ -74,9 +74,15 @@ const breakpoints = ref({
 
 /* Efeito de brilho pulsante */
 @keyframes glow {
-  0% { opacity: 1; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animate-glow {
@@ -85,8 +91,14 @@ const breakpoints = ref({
 
 /* Animação de fade-in */
 @keyframes fade-in {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -95,8 +107,14 @@ const breakpoints = ref({
 
 /* Animação de entrada */
 @keyframes slide-in {
-  0% { opacity: 0; transform: translateX(-30px); }
-  100% { opacity: 1; transform: translateX(0); }
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .animate-slide-in {
