@@ -1,0 +1,14 @@
+[33mdbff61a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeat/teste[m[33m, [m[1;31morigin/feat/teste[m[33m)[m feat: melhorias gerais no projeto e ajustes em componentes
+[33mcb3127f[m commit teste
+[33m2666bb0[m[33m ([m[1;32mmain[m[33m)[m feat: alterações nav bar
+[33m5502be9[m Feat: atualizações nos arquivos e adição de novas imagens
+[33mb427549[m feat: alteração de layout
+[33m667bca3[m feat: alterações em rotas
+[33me47ffc4[m feat: alteração nas descrições dos produtos e na forma que redireciona
+[33m2ad50d6[m feat: modificações no HeroSection e OurLocation
+[33m1045ef4[m feat: Ajuste no router e vite.config; inclusão do vercel.json para roteamento na produção
+[33m74aed58[m feat: Atualização: Ajustes nos componentes e inclusão de novas imagens
+[33m76964e9[m fix: correção de bugs
+[33md44840b[m fix: correção de bugs
+[33m0e37a10[m fix: correção de bugs e retirei imagens sem utilidade
+[33m9a0e831[m Primeiro commit
