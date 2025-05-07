@@ -1,6 +1,6 @@
 # 🍷 Vitrine Vinhos
 
-Bem-vindo ao **Vitrine Vinhos**, uma aplicação moderna e interativa para explorar os melhores vinhos que são servidos na W Lounge Premium. Desenvolvido com **Vue 3** e **Vite**, este projeto combina design elegante, animações suaves e uma experiência de usuário envolvente.
+Bem-vindo a **Vitrine de Vinhos**, uma aplicação moderna e interativa para explorar os melhores vinhos que são servidos na W Lounge Premium. Desenvolvido com **Vue 3** e **Vite**, este projeto combina design elegante, animações suaves e uma experiência de usuário envolvente.
 
 ---
 
