@@ -1,6 +1,6 @@
 <template>
   <header class="max-w-full z-20 bg-secondary">
-    <div class="bg-black px-3 max-w-full">
+    <div class="bg-secondary px-3 max-w-full">
       <div class="flex justify-center items-center container px-0"></div>
     </div>
     <nav
@@ -40,14 +40,14 @@
           'justify-left': !isHome,
         }"
       >
-        <router-link to="/" class="text-primary">Vitrine Vinhos</router-link>
+        <router-link to="/" class="text-accent">Vitrine Vinhos</router-link>
       </div>
 
       <!-- Menu Responsivo -->
       <div
         id="menu"
         :class="[ 
-          'fixed inset-0 z-20 flex flex-col items-center justify-center bg-secondary md:relative md:bg-transparent md:flex md:justify-between md:flex-row md:space-x-5',
+          'fixed inset-0 z-20 flex flex-col items-center justify-center bg-primary md:relative md:bg-transparent md:flex md:justify-between md:flex-row md:space-x-5',
           isMenuOpen ? 'block' : 'hidden',
         ]"
       >
@@ -56,7 +56,7 @@
             <router-link
               :to="item.href"
               @click.native="handleMenuClick(item.href)"
-              class="block transition hover:text-primary ease-linear text-2xl md:text-sm lg:text-lg text-black"
+              class="block transition hover:text-accent ease-linear text-2xl md:text-sm lg:text-lg text-background"
             >
               {{ item.name }}
             </router-link>
@@ -101,5 +101,20 @@ const handleMenuClick = (href) => {
 </script>
 
 <style scoped>
-/* Adicione estilos personalizados, se necessário */
+/* Paleta de cores minimalista e moderna */
+.bg-seco {
+  background-color: #4E2A2E; /* Vinho profundo */
+}
+
+.bg-secondary {
+  background-color: #2E1515; /* Cinza escuro ou preto */
+}
+
+.text-accent {
+  color: #C5A880; /* Dourado discreto */
+}
+
+.text-background {
+  color: #F5F5F5; /* Branco gelo */
+}
 </style>

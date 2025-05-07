@@ -1,8 +1,8 @@
 <template>
-  <footer class="z-10 text-white bg-secondary">
+  <footer class="z-10 text-background bg-secondary">
     <div class="container p-8 flex flex-col md:flex-row justify-between items-center">
       <!-- Logo ou Nome da Marca -->
-      <div class="text-primary text-3xl font-bold text-center md:text-left">
+      <div class="text-white text-3xl font-bold text-center md:text-left">
         Vitrine Vinhos
       </div>
 
