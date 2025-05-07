@@ -12,7 +12,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const app = createApp(App);
 
 app.use(store);
-app.use(router);
+app.use(router); // Certifique-se de que o Vue Router está sendo usado
 app.use(Vue3Marquee);
 
 app.mount('#app');

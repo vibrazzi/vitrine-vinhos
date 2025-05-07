@@ -28,7 +28,16 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  scrollBehavior() {
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition; // Retorna à posição salva ao voltar
+    }
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth', // Rolagem suave para âncoras
+      };
+    }
     return { top: 0 }; // Garante que a página sempre comece no topo ao navegar
   },
 });

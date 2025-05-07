@@ -7,9 +7,7 @@
                     <HeroSection />
                     <Collection />
                     <ExclusiveSection />
-                    <BestSellers />
                     <OurLocation />
-                    <BestGifts />
                     <ContactSection />
                     <Footer />
                     <BackToTop />
@@ -32,9 +30,7 @@ const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const HeroSection = defineAsyncComponent(() => import("@/components/HeroSection.vue"));
 const Collection = defineAsyncComponent(() => import("@/components/Collection.vue"));
 const ExclusiveSection = defineAsyncComponent(() => import("@/components/ExclusiveSection.vue"));
-const BestSellers = defineAsyncComponent(() => import("@/components/BestSellers.vue"));
 const OurLocation = defineAsyncComponent(() => import("@/components/OurLocation.vue"));
-const BestGifts = defineAsyncComponent(() => import("@/components/BestGifts.vue"));
 const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"));
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
 const BackToTop = defineAsyncComponent(() => import("@/components/BackToTop.vue"));
