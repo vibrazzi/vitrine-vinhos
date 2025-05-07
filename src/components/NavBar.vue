@@ -40,7 +40,7 @@
           'justify-left': !isHome,
         }"
       >
-        <a href="/" class="text-primary">Vitrine Vinhos</a>
+        <router-link to="/" class="text-primary">Vitrine Vinhos</router-link>
       </div>
 
       <!-- Menu Responsivo -->
@@ -53,13 +53,13 @@
       >
         <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0 font-medium">
           <li v-for="item in Menu" :key="item.name">
-            <a
-              :href="item.href"
-              @click="scrollToSection(item.href)"
+            <router-link
+              :to="item.href"
+              @click.native="handleMenuClick(item.href)"
               class="block transition hover:text-primary ease-linear text-2xl md:text-sm lg:text-lg text-black"
             >
               {{ item.name }}
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -88,12 +88,14 @@ if (props.isHome) {
   Menu.value = [{ name: "Voltar", href: "/home" }];
 }
 
-// Função para rolar até a seção
-const scrollToSection = (href) => {
+// Função para rolar até a seção ou navegar
+const handleMenuClick = (href) => {
   isMenuOpen.value = false;
-  const section = document.querySelector(href);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
+  if (href.startsWith("#")) {
+    const section = document.querySelector(href);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   }
 };
 </script>
