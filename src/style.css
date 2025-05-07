@@ -19,3 +19,22 @@
     transform: translateX(-100%);
   }
 }
+
+/* Estilos globais para o tema */
+body {
+  background-color: theme('colors.background'); /* Branco gelo */
+  color: theme('colors.primary'); /* Vinho profundo */
+}
+
+a {
+  color: theme('colors.accent'); /* Dourado discreto */
+}
+
+button {
+  background-color: theme('colors.secondary'); /* Cinza escuro ou preto */
+  color: theme('colors.background'); /* Branco gelo */
+}
+
+button:hover {
+  background-color: theme('colors.accent'); /* Dourado discreto */
+}

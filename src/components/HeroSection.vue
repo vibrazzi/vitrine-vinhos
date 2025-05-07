@@ -1,15 +1,15 @@
 <template>
-  <section class="relative w-full bg-secondary">
+  <section class="relative w-full bg-primary">
     <!-- Container Principal -->
     <div class="w-full lg:px-16 md:px-12 px-6 mx-auto relative" data-aos="zoom-in">
       <div class="grid lg:grid-cols-2 relative pt-24 mx-auto">
         <!-- Texto Hero -->
         <div class="md:mt-5 relative animate-fade-in">
-          <h1 class="text-balance text-3xl font-medium tracking-tight text-black sm:text-6xl md:text-[3rem] font-montserrat">
+          <h1 class="text-balance text-3xl font-medium tracking-tight text-background sm:text-6xl md:text-[3rem] font-montserrat">
             Descubra o prazer em cada taça <span class="gradient-text animate-glow">Tantehue!</span>
             <img src="/gif.gif" alt="Efeito brilhante" class="w-[32%] inline-block -ml-10 align-middle animate-pulse" />
           </h1>
-          <p class="mt-8 text-lg text-gray-700">
+          <p class="mt-8 text-lg text-accent">
             Aproveite o sabor, a tradição e a elegância em cada garrafa.
           </p>
         </div>
@@ -67,7 +67,7 @@ const breakpoints = ref({
 <style scoped>
 /* Estilos para HeroSection */
 .gradient-text {
-  background: linear-gradient(90deg, #921342, #ff8800);
+  background: linear-gradient(90deg, #4E2A2E, #C5A880);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -76,17 +76,19 @@ const breakpoints = ref({
 @keyframes glow {
   0% {
     opacity: 1;
+    transform: scale(1);
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
+    transform: scale(1.05);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
-
 .animate-glow {
-  animation: glow 2s infinite ease-in-out;
+  animation: glow 1.5s infinite ease-in-out;
 }
 
 /* Animação de fade-in */
@@ -100,7 +102,6 @@ const breakpoints = ref({
     transform: translateY(0);
   }
 }
-
 .animate-fade-in {
   animation: fade-in 1s ease-in-out;
 }
@@ -116,7 +117,6 @@ const breakpoints = ref({
     transform: translateX(0);
   }
 }
-
 .animate-slide-in {
   animation: slide-in 1s ease-in-out;
 }

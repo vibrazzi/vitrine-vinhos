@@ -1,10 +1,10 @@
 <template>
   <section class="mt-30" data-aos="fade-up">
     <div class="bg-primary p-8 rounded-lg shadow-md">
-      <h2 class="text-3xl font-bold text-center text-secondary mb-6">
+      <h2 class="text-3xl font-bold text-center text-white mb-6">
         ✈️ Acompanhe Seu Voo em Tempo Real
       </h2>
-      <p class="text-lg text-center text-gray-700 mb-8">
+      <p class="text-lg text-center text-gray-500 mb-8">
         Visualize chegadas e partidas do Aeroporto de Uberlândia diretamente aqui.
       </p>
       <div class="flex justify-center items-center">
