@@ -24,9 +24,6 @@
       <div class="h-[50px]">
         <h3 class="font-bold text-lg text-gray-800">{{ product.title }}</h3>
       </div>
-      <p v-if="product.price" class="text-sm text-gray-600 mt-2">
-        R$ {{ product.price.toFixed(2) }}
-      </p>
     </article>
   </div>
 </template>

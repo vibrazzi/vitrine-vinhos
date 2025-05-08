@@ -6,7 +6,7 @@
         <!-- Texto Hero -->
         <div class="md:mt-5 relative animate-fade-in">
           <h1 class="text-balance text-3xl font-medium tracking-tight text-background sm:text-6xl md:text-[3rem] font-montserrat">
-            Descubra o prazer em cada taça <span class="gradient-text animate-glow">Tantehue!</span>
+            Descubra o prazer em cada taça <span class="gradient-text 500 animate-glow">Tantehue!</span>
             <img src="/gif.gif" alt="Efeito brilhante" class="w-[32%] inline-block -ml-10 align-middle animate-pulse" />
           </h1>
           <p class="mt-8 text-lg text-accent">
