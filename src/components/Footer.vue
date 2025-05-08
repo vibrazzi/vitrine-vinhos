@@ -8,7 +8,6 @@
 
       <!-- Links úteis -->
       <div class="mt-4 md:mt-0 flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-        <a href="#home" class="hover:text-primary transition">Início</a>
         <a href="#collection" class="hover:text-primary transition">Coleção</a>
         <a href="#vinhos" class="hover:text-primary transition">Vinhos</a>
       </div>
