@@ -67,8 +67,3 @@ vitrine-vinhos/
 ## 💬 Feedback
 
 Se você gostou do projeto ou tem sugestões, sinta-se à vontade para abrir uma issue ou enviar um pull request. Vamos construir algo incrível! 🚀
-├── [package.json](http://_vscodecontentref_/0)          # Dependências e scripts
-=======
-├── [tailwind.config.js](http://_vscodecontentref_/1)    # Configuração do Tailwind CSS
-└── [vite.config.js](http://_vscodecontentref_/2)        # Configuração do Vite
-``
