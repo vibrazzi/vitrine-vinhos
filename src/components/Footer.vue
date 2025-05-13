@@ -6,12 +6,6 @@
         Vitrine Vinhos
       </div>
 
-      <!-- Links úteis -->
-      <div class="mt-4 md:mt-0 flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-        <a href="#collection" class="hover:text-primary transition">Coleção</a>
-        <a href="#vinhos" class="hover:text-primary transition">Vinhos</a>
-      </div>
-
       <!-- Direitos autorais -->
       <p class="mt-4 md:mt-0 text-sm text-center md:text-right">
         &copy; {{ new Date().getFullYear() }} Vitrine Vinhos. Todos os direitos reservados.
