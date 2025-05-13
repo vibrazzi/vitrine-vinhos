@@ -19,7 +19,7 @@ Bem-vindo ao **Vitrine Vinhos**, uma aplicação moderna e interativa para explo
 
 ## 🎨 Funcionalidades
 
-💡 **Destaques do Projeto**:
+### 💡 Destaques do Projeto
 - **Animações Suaves**: Experiência visual aprimorada com o AOS.
 - **Design Responsivo**: Totalmente otimizado para dispositivos móveis e desktops.
 - **Exploração de Produtos**: Descubra vinhos com descrições detalhadas e imagens de alta qualidade.
