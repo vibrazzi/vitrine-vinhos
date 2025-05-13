@@ -67,4 +67,4 @@ vitrine-vinhos/
 
 ## 💬 Feedback
 
-Se você gostou do projeto ou tem sugestões, sinta-se à vontade para abrir uma issue ou enviar um pull request. Vamos construir algo incrível juntos! 🚀
+Se você gostou do projeto ou tem sugestões, sinta-se à vontade para abrir uma issue ou enviar um pull request. Vamos construir algo incrível! 🚀
