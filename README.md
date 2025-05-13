@@ -1,6 +1,6 @@
 # 🍷 Vitrine Vinhos
 
-Bem-vindo ao **Vitrine Vinhos**, uma aplicação moderna e interativa para explorar os melhores vinhos servidos na **W Lounge Premium**. Desenvolvido com **Vue 3** e **Vite**, este projeto combina design elegante, animações suaves e uma experiência de usuário envolvente. 🥂
+Bem-vindo a **Vitrine de Vinhos**, uma aplicação moderna e interativa para explorar os melhores vinhos que são servidos na W Lounge Premium. Desenvolvido com **Vue 3** e **Vite**, este projeto combina design elegante, animações suaves e uma experiência de usuário envolvente.
 
 ---
 
@@ -64,7 +64,11 @@ vitrine-vinhos/
 ```
 
 ---
-
 ## 💬 Feedback
 
 Se você gostou do projeto ou tem sugestões, sinta-se à vontade para abrir uma issue ou enviar um pull request. Vamos construir algo incrível! 🚀
+├── [package.json](http://_vscodecontentref_/0)          # Dependências e scripts
+=======
+├── [tailwind.config.js](http://_vscodecontentref_/1)    # Configuração do Tailwind CSS
+└── [vite.config.js](http://_vscodecontentref_/2)        # Configuração do Vite
+``
