@@ -58,9 +58,9 @@ vitrine-vinhos/
 │   ├── views/            # Páginas principais
 │   ├── App.vue           # Componente raiz
 │   └── main.js           # Arquivo de entrada
-├── package.json          # Dependências e scripts
-├── tailwind.config.js    # Configuração do Tailwind CSS
-└── vite.config.js        # Configuração do Vite
+├── [package.json](https://github.com/vibrazzi/vitrine-vinhos/blob/main/package.json)          # Dependências e scripts
+├── [tailwind.config.js](https://github.com/vibrazzi/vitrine-vinhos/blob/main/tailwind.config.js)    # Configuração do Tailwind CSS
+└── [vite.config.js](https://github.com/vibrazzi/vitrine-vinhos/blob/main/vite.config.js)        # Configuração do Vite
 ```
 
 ---
