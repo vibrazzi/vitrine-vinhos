@@ -54,7 +54,6 @@ const images = ref([
   "/merlot.png",
   "/cabernet.jpg",
   "/camenere.png",
-  "/rose.png",
 ]);
 
 // Configuração de pontos de quebra para responsividade

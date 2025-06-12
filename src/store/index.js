@@ -35,14 +35,6 @@ export default createStore({
         description:
           "Explore o Vinho Tinto Chileno Tantehue Merlot. Seu charme se revela em aromas intensos de framboesas, morangos, mirtilos e cassis, complementados por notas sutis de especiarias e baunilha. Com corpo envolvente e acidez equilibrada, sua elegância perdura até o final limpo. Suave e frutado, com notas de ameixa e cereja. Vai bem com massas e pratos italianos.",
       },
-      {
-        id: 5,
-        img: "/VinhoRose.png",
-        title: "Rosé",
-        category: "ring",
-        description:
-          "Um vinho rosé delicado, frutado e de paladar refrescante. Ligeiro, mas com bom volume de boca, harmoniza muito bem com pescados, mariscos, queijos frescos e saladas.",
-      },
     ],
     productID: null,
   },
