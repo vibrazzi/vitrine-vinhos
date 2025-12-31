@@ -2,7 +2,9 @@
   <section id="collection" class="mt-32" data-aos="fade-up">
     <NavBar />
     <h1
-      class="text-center mb-10 text-4xl/[0.9] font-medium tracking-tight text-black sm:text-7xl/[0.8] md:text-[5rem]/[0.9]"
+      class="text-center mb-10 text-4xl/[0.9] font-medium tracking-tight text-black sm:text-7xl/[0.8] md:text-[5rem]/[0.9] font-playfair"
+      role="heading"
+      aria-level="1"
     >
       Coleção
     </h1>
@@ -18,15 +20,16 @@
         <div class="max-h-[180px] flex-shrink-0 w-[120px] h-[180px]">
           <img
             :src="element.img"
-            :alt="`Imagem do produto ${element.name}`"
+            :alt="`Garrafa de ${element.name} - ${element.subtitle}`"
             class="scale-100 group-hover:scale-105 transition-all duration-500 w-full h-full object-cover rounded-lg"
+            loading="lazy"
           />
         </div>
         <!-- Descrição do Produto -->
         <div class="text-left flex-1">
-          <p class="font-bold uppercase text-black text-lg">{{ element.name }}</p>
-          <p v-if="element.subtitle" class="text-sm text-gray-500 italic">{{ element.subtitle }}</p>
-          <p v-html="element.description" class="text-sm text-gray-600 mt-2"></p>
+          <h3 class="font-bold uppercase text-black text-lg font-montserrat">{{ element.name }}</h3>
+          <p v-if="element.subtitle" class="text-sm text-gray-500 italic font-montserrat">{{ element.subtitle }}</p>
+          <p v-html="element.description" class="text-sm text-gray-600 mt-2 font-montserrat"></p>
         </div>
       </div>
     </div>
