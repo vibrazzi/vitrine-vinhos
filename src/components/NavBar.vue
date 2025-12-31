@@ -1,5 +1,5 @@
 <template>
-  <header class="max-w-full z-20 bg-secondary">
+  <header class="max-w-full z-20 bg-secondary" role="banner">
     <div class="bg-secondary px-3 max-w-full">
       <div class="flex justify-center items-center container px-0"></div>
     </div>
@@ -9,10 +9,11 @@
       <!-- Botão de alternância para dispositivos móveis -->
       <div class="md:hidden z-30">
         <button
-          class="block focus:outline-none"
+          class="block focus:outline-none focus:ring-2 focus:ring-accent rounded"
           @click="isMenuOpen = !isMenuOpen"
           :aria-expanded="isMenuOpen"
           aria-controls="menu"
+          aria-label="Alternar menu de navegação"
         >
           <span v-if="isMenuOpen" class="text-5xl">
             <img
@@ -40,7 +41,7 @@
           'justify-left': !isHome,
         }"
       >
-        <router-link to="/" class="text-accent">Vitrine Vinhos</router-link>
+        <router-link to="/" class="text-accent font-playfair" aria-label="Página inicial - Vitrine Vinhos">Vitrine Vinhos</router-link>
       </div>
 
       <!-- Menu Responsivo -->
@@ -51,12 +52,13 @@
           isMenuOpen ? 'block' : 'hidden',
         ]"
       >
-        <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0 font-medium">
+        <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0 font-medium font-montserrat" role="menubar">
           <li v-for="item in Menu" :key="item.name">
             <router-link
               :to="item.href"
               @click.native="handleMenuClick(item.href)"
-              class="block transition hover:text-accent ease-linear text-2xl md:text-sm lg:text-lg text-background"
+              class="block transition hover:text-accent ease-linear text-2xl md:text-sm lg:text-lg text-background focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1"
+              role="menuitem"
             >
               {{ item.name }}
             </router-link>
