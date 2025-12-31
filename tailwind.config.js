@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'], // Fonte principal com fallback
+        montserrat: ['"Montserrat"', 'sans-serif'], // Fonte secundária moderna
       },
     },
   },
