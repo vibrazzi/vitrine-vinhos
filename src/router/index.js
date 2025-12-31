@@ -11,7 +11,7 @@ const routes = [
     path: '/product-details/:id',
     name: 'ProductDetails',
     component: () => import('@/views/ProductDetails.vue'),
-    props: true, // Passa o parâmetro `id` como prop para o componente
+    props: true,
   },
   {
     path: '/collection',
@@ -30,15 +30,15 @@ const router = createRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
-      return savedPosition; // Retorna à posição salva ao voltar
+      return savedPosition;
     }
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth', // Rolagem suave para âncoras
+        behavior: 'smooth',
       };
     }
-    return { top: 0 }; // Garante que a página sempre comece no topo ao navegar
+    return { top: 0 };
   },
 });
 

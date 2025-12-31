@@ -1,9 +1,7 @@
 <template>
   <section class="relative w-full bg-primary">
-    <!-- Container Principal -->
     <div class="w-full lg:px-16 md:px-12 px-6 mx-auto relative" data-aos="zoom-in">
       <div class="grid lg:grid-cols-2 relative pt-24 mx-auto">
-        <!-- Texto Hero -->
         <div class="md:mt-5 relative animate-fade-in">
           <h1 class="text-balance text-3xl font-medium tracking-tight text-background sm:text-6xl md:text-[3rem] font-montserrat" role="heading" aria-level="1">
             Descubra o prazer em cada taça <span class="gradient-text 500 animate-glow">Tantehue!</span>
@@ -14,7 +12,6 @@
           </p>
         </div>
 
-        <!-- Carrossel de Vinhos -->
         <div class="lg:h-full w-[90%] md:w-full mt-20 md:mt-0 animate-slide-in">
           <Carousel :wrap-around="true" :breakpoints="breakpoints" aria-label="Carrossel de vinhos exclusivos">
             <Slide v-for="(image, index) in images" :key="index">
@@ -30,7 +27,6 @@
       </div>
     </div>
 
-    <!-- Marquee Secundário -->
     <div class="outer-running-about mt-10 bg-black rounded-md shadow-lg">
       <div class="running-text max-w-full text-center">
         <Vue3Marquee speed="40" pauseOnHover class="hover-scale">
@@ -48,7 +44,6 @@ import { ref } from "vue";
 import { Carousel, Navigation, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 
-// Lista de imagens do carrossel
 const images = ref([
   "/blanc.png",
   "/merlot.png",
@@ -56,7 +51,6 @@ const images = ref([
   "/camenere.png",
 ]);
 
-// Configuração de pontos de quebra para responsividade
 const breakpoints = ref({
   640: { itemsToShow: 2, snapAlign: "center" },
   1024: { itemsToShow: 3, snapAlign: "center" },
@@ -64,14 +58,12 @@ const breakpoints = ref({
 </script>
 
 <style scoped>
-/* Estilos para HeroSection */
 .gradient-text {
   background: linear-gradient(90deg, #4E2A2E, #C5A880);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Efeito de brilho pulsante */
 @keyframes glow {
   0% {
     opacity: 1;
@@ -90,7 +82,6 @@ const breakpoints = ref({
   animation: glow 1.5s infinite ease-in-out;
 }
 
-/* Animação de fade-in */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -105,7 +96,6 @@ const breakpoints = ref({
   animation: fade-in 1s ease-in-out;
 }
 
-/* Animação de entrada */
 @keyframes slide-in {
   0% {
     opacity: 0;
@@ -120,19 +110,16 @@ const breakpoints = ref({
   animation: slide-in 1s ease-in-out;
 }
 
-/* Efeito de escala no marquee */
 .hover-scale:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Carrossel refinado */
 .carousel-wrapper {
   width: 90%;
   max-width: 450px;
 }
 
-/* Cada item do carrossel */
 .carousel-item {
   display: flex;
   justify-content: center;
@@ -144,7 +131,6 @@ const breakpoints = ref({
   transition: transform 0.4s ease-in-out;
 }
 
-/* Imagem dentro do carrossel */
 .carousel-image {
   width: 280px;
   height: 420px;
@@ -157,7 +143,6 @@ const breakpoints = ref({
   transform: scale(1.05);
 }
 
-/* Navegação refinada */
 .carousel-navigation {
   filter: drop-shadow(0px 5px 10px rgba(255, 136, 0, 0.5));
 }

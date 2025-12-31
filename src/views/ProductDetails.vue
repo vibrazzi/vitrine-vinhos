@@ -4,7 +4,6 @@
     <div class="flex flex-col justify-center items-center min-h-screen">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row -mx-4">
-          <!-- Product Image -->
           <div class="md:flex-1 px-4">
             <div class="h-[460px] rounded-lg bg-gray-300 mb-4">
               <img
@@ -16,9 +15,7 @@
               />
             </div>
           </div>
-          <!-- End Product Image -->
 
-          <!-- Product Details -->
           <div class="md:flex-1 px-4" data-aos="fade-left">
             <h2 v-if="Product" class="text-2xl font-bold mb-2">{{ Product.title }}</h2>
             <div>
@@ -31,7 +28,6 @@
               <p class="text-red-600 font-bold text-lg">R$ {{ Product.price.toFixed(2) }}</p>
             </div>
           </div>
-          <!-- End Product Details -->
         </div>
       </div>
     </div>
@@ -44,11 +40,9 @@ import { defineAsyncComponent, onBeforeMount, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
 
-// Componentes assíncronos
 const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"));
 
-// Configuração do Vuex e rota
 const route = useRoute();
 const store = useStore();
 const id = ref(null);

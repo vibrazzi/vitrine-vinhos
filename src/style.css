@@ -19,21 +19,20 @@
   }
 }
 
-/* Estilos globais para o tema */
 body {
-  background-color: theme('colors.background'); /* Branco gelo */
-  color: theme('colors.primary'); /* Vinho profundo */
+  background-color: theme('colors.background');
+  color: theme('colors.primary');
 }
 
 a {
-  color: theme('colors.accent'); /* Dourado discreto */
+  color: theme('colors.accent');
 }
 
 button {
-  background-color: theme('colors.secondary'); /* Cinza escuro ou preto */
-  color: theme('colors.background'); /* Branco gelo */
+  background-color: theme('colors.secondary');
+  color: theme('colors.background');
 }
 
 button:hover {
-  background-color: theme('colors.accent'); /* Dourado discreto */
+  background-color: theme('colors.accent');
 }

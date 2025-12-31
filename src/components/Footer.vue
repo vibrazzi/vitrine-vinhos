@@ -1,13 +1,11 @@
 <template>
   <footer class="z-10 text-background bg-secondary" role="contentinfo">
     <div class="container p-8 flex flex-col md:flex-row justify-between items-center">
-      <!-- Logo ou Nome da Marca -->
       <div class="text-white text-3xl font-bold text-center md:text-left font-playfair">
         <span class="text-accent">Vitrine Vinhos</span>
         <p class="text-sm font-montserrat font-normal mt-2 text-gray-300">W Lounge Premium</p>
       </div>
 
-      <!-- Direitos autorais -->
       <div class="mt-4 md:mt-0 text-center md:text-right">
         <p class="text-sm font-montserrat">
           &copy; {{ new Date().getFullYear() }} Vitrine Vinhos. Todos os direitos reservados.
@@ -21,7 +19,6 @@
 </template>
 
 <script setup>
-// Nenhuma lógica adicional necessária no momento
 </script>
 
 <style scoped>

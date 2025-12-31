@@ -6,7 +6,6 @@
     <nav
       class="flex items-center relative p-3 justify-between bg-secondary md:h-16 h-28 mx-auto md:px-4 container flex-wrap md:flex-nowrap"
     >
-      <!-- Botão de alternância para dispositivos móveis -->
       <div class="md:hidden z-30">
         <button
           class="block focus:outline-none focus:ring-2 focus:ring-accent rounded"
@@ -34,7 +33,6 @@
         </button>
       </div>
 
-      <!-- LOGO -->
       <div
         :class="{
           'text-3xl font-bold flex': true,
@@ -44,10 +42,9 @@
         <router-link to="/" class="text-accent font-playfair" aria-label="Página inicial - Vitrine Vinhos">Vitrine Vinhos</router-link>
       </div>
 
-      <!-- Menu Responsivo -->
       <div
         id="menu"
-        :class="[ 
+        :class="[
           'fixed inset-0 z-20 flex flex-col items-center justify-center bg-primary md:relative md:bg-transparent md:flex md:justify-between md:flex-row md:space-x-5',
           isMenuOpen ? 'block' : 'hidden',
         ]"
@@ -79,7 +76,6 @@ const props = defineProps({
 const isMenuOpen = ref(false);
 const Menu = ref([]);
 
-// Configuração do menu com base na página
 if (props.isHome) {
   Menu.value = [
     { name: "Início", href: "/home" },
@@ -90,7 +86,6 @@ if (props.isHome) {
   Menu.value = [{ name: "Voltar", href: "/home" }];
 }
 
-// Função para rolar até a seção ou navegar
 const handleMenuClick = (href) => {
   isMenuOpen.value = false;
   if (href.startsWith("#")) {
@@ -103,20 +98,19 @@ const handleMenuClick = (href) => {
 </script>
 
 <style scoped>
-/* Paleta de cores minimalista e moderna */
 .bg-seco {
-  background-color: #4E2A2E; /* Vinho profundo */
+  background-color: #4E2A2E;
 }
 
 .bg-secondary {
-  background-color: #2E1515; /* Cinza escuro ou preto */
+  background-color: #2E1515;
 }
 
 .text-accent {
-  color: #C5A880; /* Dourado discreto */
+  color: #C5A880;
 }
 
 .text-background {
-  color: #F5F5F5; /* Branco gelo */
+  color: #F5F5F5;
 }
 </style>

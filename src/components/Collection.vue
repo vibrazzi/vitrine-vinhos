@@ -16,7 +16,6 @@
         :key="element.id"
         class="w-full mx-auto flex items-center gap-4 flex-wrap"
       >
-        <!-- Imagem do Produto -->
         <div class="max-h-[180px] flex-shrink-0 w-[120px] h-[180px]">
           <img
             :src="element.img"
@@ -25,7 +24,6 @@
             loading="lazy"
           />
         </div>
-        <!-- Descrição do Produto -->
         <div class="text-left flex-1">
           <h3 class="font-bold uppercase text-black text-lg font-montserrat">{{ element.name }}</h3>
           <p v-if="element.subtitle" class="text-sm text-gray-500 italic font-montserrat">{{ element.subtitle }}</p>
@@ -39,7 +37,6 @@
 <script setup>
 import { ref } from "vue";
 
-// Lista de produtos da coleção
 const collection = ref([
   {
     id: 2,
