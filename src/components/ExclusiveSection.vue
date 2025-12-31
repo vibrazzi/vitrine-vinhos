@@ -2,7 +2,9 @@
   <section id="vinhos" class="mt-32" data-aos="fade-up">
     <h1
       class="text-center mb-20 text-4xl/[0.9] font-medium tracking-tight text-black sm:text-7xl/[0.8] 
-      md:text-[5rem]/[0.9]"
+      md:text-[5rem]/[0.9] font-playfair"
+      role="heading"
+      aria-level="1"
     >
       Sobre nossos vinhos
     </h1>
