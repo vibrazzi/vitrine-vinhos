@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Adicione no arquivo c:\Users\weber\vitrine-vinhos\src\style.css */
 .marquee {
   overflow: hidden;
   white-space: nowrap;
