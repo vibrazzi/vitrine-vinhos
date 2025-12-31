@@ -24,7 +24,6 @@
 import { defineAsyncComponent } from "vue";
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
 
-// Lazy loading dos componentes
 const NavBar = defineAsyncComponent(() => import("@/components/NavBar.vue"));
 const HeroSection = defineAsyncComponent(() => import("@/components/HeroSection.vue"));
 const Collection = defineAsyncComponent(() => import("@/components/Collection.vue"));
