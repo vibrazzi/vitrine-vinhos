@@ -5,11 +5,11 @@
       <div class="grid lg:grid-cols-2 relative pt-24 mx-auto">
         <!-- Texto Hero -->
         <div class="md:mt-5 relative animate-fade-in">
-          <h1 class="text-balance text-3xl font-medium tracking-tight text-background sm:text-6xl md:text-[3rem] font-montserrat">
+          <h1 class="text-balance text-3xl font-medium tracking-tight text-background sm:text-6xl md:text-[3rem] font-montserrat" role="heading" aria-level="1">
             Descubra o prazer em cada taça <span class="gradient-text 500 animate-glow">Tantehue!</span>
             <img src="/gif.gif" alt="Efeito brilhante" class="w-[32%] inline-block -ml-10 align-middle animate-pulse" />
           </h1>
-          <p class="mt-8 text-lg text-accent">
+          <p class="mt-8 text-lg text-accent font-montserrat">
             Aproveite o sabor, a tradição e a elegância em cada garrafa.
           </p>
         </div>
@@ -19,7 +19,7 @@
           <Carousel :wrap-around="true" :breakpoints="breakpoints" aria-label="Carrossel de vinhos exclusivos">
             <Slide v-for="(image, index) in images" :key="index">
               <div class="carousel-item">
-                <img :src="image" :alt="`Imagem do vinho ${index + 1}`" class="carousel-image" />
+                <img :src="image" :alt="`Imagem do vinho ${index + 1}`" class="carousel-image" loading="lazy" />
               </div>
             </Slide>
             <template #addons>
